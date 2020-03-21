@@ -5,7 +5,7 @@ import "errors"
 // cubeの体積計算
 func CubeVolume(n int) (int, error) {
 	if n != 0 {
-		return 0, n * n * n
+		return n * n * n, nil
 	} else {
 		return 0, errors.New("Zero length edge is not allowed")
 	}
